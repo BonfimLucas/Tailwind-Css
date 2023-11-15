@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  purge: {
+    enabled: true,
+    content: ['./src/**/*.html'],
+  },
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {
-      backgroundImage: theme => ({
-        'folhas': 'url(../img/folhas.jpg)'})
-    },
+    extend: {},
   },
   plugins: [],
 }
